@@ -1,0 +1,38 @@
+.formcontrol{    
+    padding: 1rem 1.5rem;
+}
+    .inputcontrol {
+      margin-bottom: 0.5rem;
+      padding: 1rem 0;
+    } 
+    
+    .inputcontrol 
+     {
+      font: inherit;
+      padding: 1rem;  
+      background-color: #fffefe;
+      border-bottom: 2px solid grey;
+      display: block;    
+      width: 100%;
+      font-size: 1rem;
+      color:black;
+      box-shadow: none !important;
+    }
+    
+    .inputcontrol :focus,
+    .inputcontrol :focus{
+      background-color: transparent;    
+      border-bottom: 2px solid rgba(68, 25, 25, 0.39);    
+    }
+    button{
+      padding: 1rem 2rem;
+      color: #fff;
+      font-size: 1.5rem;
+      background-color: #3c7cf1;
+      border-radius: 10px;
+      margin: 1rem 0;    
+      font-weight: 400;      
+    }
+      
+    
+  

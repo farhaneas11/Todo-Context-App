@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route,Routes } from 'react-router-dom';
+
+import Layout from './Components/Layout/Layout';
+import AllTodo from './Pages/AllTodo';
+import DetailTodo from './Pages/DetailTodo';
+import NewTodo from './Pages/NewTodo';
+import NotFound from './Pages/NotFound';
+import TodoContextProvider from './Context/TodoContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <TodoContextProvider>
+        <Routes>
+          <Route exact path='/' element={<AllTodo/>}/>
+          <Route path='/todos' element={<AllTodo/>}/>
+          <Route path='/newtodos' element={<NewTodo/>}/>
+          <Route path='/todos/:todoid' element={<DetailTodo/>}/>
+          <Route path='*' element={<NotFound/>}/>
+        </Routes>
+      </TodoContextProvider>
+    </Layout>
   );
 }
 

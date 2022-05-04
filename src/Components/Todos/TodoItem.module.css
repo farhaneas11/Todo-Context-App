@@ -1,0 +1,49 @@
+.item {
+    margin: 1rem 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: #c2e7f0;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .item:last-of-type {
+    border-bottom: none;
+  }
+  
+  .item a figure {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .item a blockquote {
+    margin: 0;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #212929;
+  }
+  
+  .item p {
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+  
+  .item figcaption {
+    font-style: italic;
+    color: #566d6d;
+  }
+
+  button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #3c7cf1;
+    border-radius: 10px;
+    margin: 1rem 0;    
+    font-weight: 400;      
+  }

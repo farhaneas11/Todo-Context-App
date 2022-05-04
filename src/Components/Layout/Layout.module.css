@@ -1,0 +1,8 @@
+.layout{
+    background-color: #008080ad;    
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 50rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
